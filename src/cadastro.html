@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/dist/output.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Criar Conta / Finn-tech</title>
+</head>
+
+<body class="bg-gradient-to-r m-auto max-w-md flex justify-center via-cyan-600  from-purple-500 to-pink-500  h-full">
+  <main class="mt-4">
+    <div>
+      <div class="flex justify-center items-center">
+        <a href="login.html"><img src="imgs/finn-icon.svg" class="ring-4 ring-white px-4 rounded-md" width="150" alt="Icone do Finn"></a>
+      </div>
+      <div class="flex justify-center items-center">
+        <h1 class="font-medium text-white  mb-2 text-6xl">Finn-Tech</h1>
+      </div>
+      <div class="mb-4">
+        <p class="flex justify-center text-center text-gray-300 text-3xl">Crie sua conta!</p>
+        <p class="flex  justify-center text-right max-w-md text-gray-300 text-base sm:text-xl">Não se esqueça de preencher todos os dados.</p>
+      </div>
+
+      <div class="flex justify-center ">
+
+        <form action="POST">
+          <div class="max-w-fit sm:ml-0">
+            <label for="email" class="text-2xl text-white font-bold">Email:</label><br>
+            <input type="email" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 w-80 sm:w-96 focus:ring-purple-400" placeholder=" user@email.com"><br>
+            <div class="mt-2">
+              <label for="cpf" class="text-2xl text-white font-bold">CPF:</label><br>
+              <input type="text" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 w-80 sm:w-96" required placeholder=" 111.222.333-44"><br>
+            </div>
+            <div class="flex space-x-4">
+              <div>
+                <label for="nome" class="text-2xl text-white font-bold">Nome:</label>
+                <input type="text" style="width:9rem" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400" required>
+              </div>
+              <div>
+                <label for="sobrenome" class="text-2xl text-white font-bold">Sobrenome:</label>
+                <input type="text" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 w-36 sm:w-56" required>
+              </div>
+            </div>
+            <div class="mt-2">
+              <label for="password" class="text-2xl text-white font-bold">Senha:</label><br>
+              <input type="password" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 w-80 sm:w-96" required><br>
+            </div>
+            <div class="mt-2">
+              <label for="password" class="text-2xl text-white font-bold">Confirmação de Senha:</label><br>
+              <input type="password" class="p-2 border-2  border-black rounded-md
+            focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 w-80 sm:w-96" required><br>
+            </div>
+            <div class="mt-2">
+              <label for="termos" class="text-2xl text-white font-bold">Termos:</label><br>
+              <div class="flex">
+                <input type="checkbox" class="justify-start w-4 h-8 border-black rounded-md
+             " required>
+                <p class="text-left ml-1 mt-1 text-gray-200 max-w-xs sm:max-w-none">Ao clicar em Cadastrar-se, você concorda com os <a href="" class="text-pink-300">Termos de serviço</a> da Finn-Tech e reconhece que nosso <a href="" class="text-pink-300"> Aviso de privacidade</a> está em efeito.</p>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="flex mt-4 justify-center">
+        <button class="sm:w-96 w-80 text-center border border-black font-bold block mb-4 mt-2 p-2 px-12 rounded-md bg-pink-500 hover:bg-pink-400
+          drop-shadow-lg shadow-black text-white focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-white" href="">Cadastrar-se</button>
+      </div>
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>
